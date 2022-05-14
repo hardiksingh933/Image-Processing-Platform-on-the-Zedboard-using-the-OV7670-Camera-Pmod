@@ -23,7 +23,7 @@ In order to replicate my project you'll need to create a Vivado Project using th
 
 Note:- Don't customize the names of the newly added IP blocks, I've set the top level VHDL files to instantiate these modules with the default names that Vivado will provide.  
 
-- Step 6: Now you are ready to synthesize the design, we now need to add the pin mappings in this stage, the two images below contain the pin mapping information.  
+- Step 6: Now you are ready to synthesize the design, we now need to add the pin mappings in this stage, the two images below contain the pin mapping information (The constraint file is also present in the sources folder just in case).  
 ![Pin_Mappings_1](./Presentation/images/Screenshot%20(377).png)  
 ![Pin_Mappings_2](./Presentation/images/Screenshot%20(378).png)  
 - Step 7: Now you are ready to make final connections on the Zedboard, generate the bitstream and use Vivado's Hardware Manager to program and run the FPGA.
