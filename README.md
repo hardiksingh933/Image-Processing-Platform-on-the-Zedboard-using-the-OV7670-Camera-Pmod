@@ -21,7 +21,7 @@ In order to replicate my project you'll need to create a Vivado Project using th
 - Step 4: Add one instance of the clocking wizard, we won't be utilizing the Zynq Processing System clock, instead we'll utilize the PL clock provied at pin Y9 and reduce it via the clocking wizard. Set outputs 3 and 4 of the IP to 50 Mhz and 25 Mhz respectively.
 - Step 5: Now add two instances of BRAM IP. For the first one, make sure to select always enables for the we pin, then you'll need to set port width as 8 bits and depth as 307200. For the second BRAM IP block, set the port widths as 4 bits and the same depth of 307200.   
 
-Note:- Don't customize the names of the newly added IP blocks, I've set the top level VHDL files to instantiate these modules with the default names that Vivado will provide.  
+Note:- Don't customize the names of the newly added IP blocks, I've set the top level VHDL files to instantiate these modules with the default names that Vivado will assign.  
 
 - Step 6: Now you are ready to synthesize the design, we now need to add the pin mappings in this stage, the two images below contain the pin mapping information (The constraint file is also present in the sources folder just in case).  
 ![Pin_Mappings_1](./Presentation/images/Screenshot%20(377).png)  
